@@ -1,0 +1,9 @@
+.myContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex: 1 1 0px;
+  }
+  
+  .myDatePicker {   
+    width: 100%;   }
