@@ -9,9 +9,8 @@ export default function Mainpage() {
     const [newTodo, setNewTodo] = useState("");
     const completed = (todos.filter(item => item.status)).length
     const pending = (todos.filter(item => !item.status)).length
-     const addaudio = new Audio('/audio/audio.mp3');
-    const removeaudio = new Audio('/audio/remove.mp3');
-    const markasdone = new Audio('/audio/markasdone.mp3');
+
+
     const addTodo = () => {
         if (newTodo.trim() !== "") {
             const newTodoItem:Todo = {
@@ -20,6 +19,7 @@ export default function Mainpage() {
                 status: false,
             };
             setTodos((prevTodos) => [...prevTodos, newTodoItem]);
+            const addaudio = new Audio('/audio/audio.mp3');
             addaudio.play()
             setNewTodo("");
         }
@@ -28,12 +28,13 @@ export default function Mainpage() {
         setTodos((preitem) => preitem.map((item) =>
             item.id === id ? {...item, status: !item.status} : item)
         )
+        const markasdone = new Audio('/audio/markasdone.mp3');
         markasdone.play()
     }
     const Deleteitem = (id:number) => {
         setTodos((prevItems) =>
             prevItems.filter((item) => item.id !== id)
-        );
+        );    const removeaudio = new Audio('/audio/remove.mp3');
         removeaudio.play()
     };
     return (
