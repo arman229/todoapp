@@ -1,7 +1,7 @@
 
 # Todo App
 
-A simple Todo app for managing your tasks efficiently. Keep track of your to-dos, mark them as completed, and stay organized.
+A simple Todo app for managing your tasks efficiently. Keep track of your todo's, mark them as completed, and stay organized.
  
 ![todooutput](https://github.com/arman229/ToDoTracker/assets/115856806/7a229c79-fa20-40f8-91c0-c19fa60cc7f0)
 
@@ -38,10 +38,10 @@ Check out the live demo of the Todo App: [Demo Link](https://todo-web-app-arman.
 
 1. Clone the repository:
     
-            git clone https://github.com/arman229/todo_app.git
+            git clone https://github.com/arman229/todoapp.git
 2. Navigate to the project directory:
 
-           cd todo-app
+           cd todoapp
 3.Install the dependencies:
 
               npm install
